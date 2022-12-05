@@ -36,7 +36,8 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('191011450602 - WIKE RAHAYU'),
+        centerTitle: true,
+        title: Text('191011450209 - WIKE RAHAYU'),
       ),
       body: Center(
         child: Column(
@@ -66,6 +67,8 @@ class _MainPageState extends State<MainPage> {
                     child: Text('Cari')),
               ],
             ),
+             Padding(
+            padding: const EdgeInsets.symmetric(vertical: 30)),
             isFetch
                 ? Column(
                     children: [
@@ -82,7 +85,7 @@ class _MainPageState extends State<MainPage> {
                     ],
                   )
                 : SizedBox(),
-            Padding(padding: EdgeInsets.all(10)),
+            Padding(padding: const EdgeInsets.symmetric(horizontal: 18.0, vertical: 18)),
             Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -101,6 +104,7 @@ class _MainPageState extends State<MainPage> {
                         ],
                       )
                     : SizedBox(),
+                Padding(padding: const EdgeInsets.symmetric(horizontal: 18.0, vertical: 18),),
                 isFetch
                     ? Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -116,6 +120,7 @@ class _MainPageState extends State<MainPage> {
                         ],
                       )
                     : SizedBox(),
+                Padding(padding: const EdgeInsets.symmetric(horizontal: 18.0, vertical: 18),),
                 isFetch
                     ? Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -131,6 +136,7 @@ class _MainPageState extends State<MainPage> {
                         ],
                       )
                     : SizedBox(),
+                Padding(padding: const EdgeInsets.symmetric(horizontal: 18.0, vertical: 18),),
                 isFetch
                     ? Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
